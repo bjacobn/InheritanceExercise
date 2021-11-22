@@ -6,34 +6,55 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
+            //---------------------------BIRD-----------------------------
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
-
-
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
-
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
+            /*DONE - *Create an object of your Bird class
+             *DONE-  give values to your members using the object of your Bird class
              *  
-             * Creatively display the class member values 
+             *DONE - Creatively display the class member values 
              */
 
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
+            
+            var blueJay = new Bird()
+            {
+                Habitat = "PineWoods of Florida",
+                LifeSpan = 7,
+                Diet = "Vegetation",
+                HasVertebrate = true,
+                BirdName = "BlueJays",
+                WingSpan = 14,
+                FeatherColor = "brown",
+                VocalSound = "jeer",
+                
+            };
+
+            blueJay.PrintBirdDetials();
+            Console.WriteLine();
+
+
+            //----------------------------REPTILE-------------------------
+            
+            /*DONE - Create an object of your Reptile class
+             *DONE -  give values to your members using the object of your Reptile class
              *  
-             * Creatively display the class member values 
+             * DONE -Creatively display the class member values 
              */
+
+            
+            var greenIguana = new Reptile()
+            {
+                Habitat = "Caribbean Islands",
+                LifeSpan = 20,
+                Diet = "Leaves",
+                HasVertebrate = true,
+                ReptileName = "Green Iguana",
+                Scales = "overlapping",
+                NumberEggsLays = 20,
+                RunSpeed = 21
+           };
+
+            greenIguana.PrintReptileDetials();
+            Console.WriteLine();
         }
     }
 }
